@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "tsc index.ts && node index.js"
+    "start": "tsc index.ts && node index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mathjs": "^9.5.1"
+  }
 }
