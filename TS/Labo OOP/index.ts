@@ -7,7 +7,7 @@ interface IGestructureerdeMededeling {
 
   }
 
-class GestructureerdeMededeling implements IGestructureerdeMededeling  {
+export class GestructureerdeMededeling implements IGestructureerdeMededeling  {
     jaar: string;
     klantNr: string;
     bestelNummer: string;
@@ -17,7 +17,7 @@ class GestructureerdeMededeling implements IGestructureerdeMededeling  {
    
     constructor(jaar: number = 0, klantNr: number = 0, bestelNummer: number = 0) {
       this.jaar = this.validate(jaar, 3);
-      this.klantNr = this.validate(klantNr, 3);
+      this.klantNr = this.validate(klantNr, 4);
       this.bestelNummer = this.validate(bestelNummer, 3);
     }
 
@@ -49,6 +49,6 @@ class GestructureerdeMededeling implements IGestructureerdeMededeling  {
    
   }
    
-  let greeter = new GestructureerdeMededeling(2017, 123, 1);
+//   let greeter = new GestructureerdeMededeling(2017, 123, 1);
 
-  console.log(greeter.toString())
+//   console.log(greeter.toString())

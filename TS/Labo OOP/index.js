@@ -1,3 +1,6 @@
+"use strict";
+exports.__esModule = true;
+exports.GestructureerdeMededeling = void 0;
 var GestructureerdeMededeling = /** @class */ (function () {
     //private _checkSum: number;
     function GestructureerdeMededeling(jaar, klantNr, bestelNummer) {
@@ -9,7 +12,7 @@ var GestructureerdeMededeling = /** @class */ (function () {
             return "" + GestructureerdeMededeling.decorator + _this.jaar + GestructureerdeMededeling.separator + _this.klantNr + GestructureerdeMededeling.separator + _this.bestelNummer + _this.getCheckSum() + GestructureerdeMededeling.decorator;
         };
         this.jaar = this.validate(jaar, 3);
-        this.klantNr = this.validate(klantNr, 3);
+        this.klantNr = this.validate(klantNr, 4);
         this.bestelNummer = this.validate(bestelNummer, 3);
     }
     GestructureerdeMededeling.prototype.getCheckSum = function () {
@@ -32,5 +35,6 @@ var GestructureerdeMededeling = /** @class */ (function () {
     GestructureerdeMededeling.separator = "/";
     return GestructureerdeMededeling;
 }());
-var greeter = new GestructureerdeMededeling(2017, 123, 1);
-console.log(greeter.toString());
+exports.GestructureerdeMededeling = GestructureerdeMededeling;
+//   let greeter = new GestructureerdeMededeling(2017, 123, 1);
+//   console.log(greeter.toString())
