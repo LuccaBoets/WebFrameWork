@@ -1,0 +1,8 @@
+<!-- <p *ngFor="let locaties of locatiesOfCity;">{{locaties}}</p> -->
+<table border="1">
+    <tr *ngFor="let weer of weerBericht;">
+        <td>{{weer.temperatuur}}</td>
+        <td>{{weer.locatie}}</td>
+        <td><img src="https://openweathermap.org/img/w/0{{weer.temperatuur%4+1}}d.png"></td>
+    </tr>
+</table>
