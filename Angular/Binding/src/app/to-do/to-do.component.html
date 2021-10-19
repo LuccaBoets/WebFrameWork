@@ -1,0 +1,6 @@
+<ol>
+    <li *ngFor="let task of tasks; let i = index">{{task}} <input type="button" value="X" (click)="removeTask(i)"></li>
+</ol>
+
+<input #in type="text" name="task" id="task" placeholder="Geef hier je item in">
+<input type="button" value="Voeg toe" (click)="addTask(in.value)">
