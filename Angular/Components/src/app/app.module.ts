@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { FunFactComponent } from './fun-fact/fun-fact.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FunFactComponent,
-    NavbarComponent
+    NavbarComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
