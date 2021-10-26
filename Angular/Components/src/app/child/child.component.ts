@@ -5,11 +5,10 @@ import { ParentComponent } from '../parent/parent.component';
   selector: 'app-child',
   templateUrl: './child.component.html',
   styleUrls: ['./child.component.css'],
-  directives: [ChildCmp]
+  
 })
 export class ChildComponent implements OnInit {
 
-  @ViewChild(ParentComponent) child: ParentComponent;
 
   constructor() { 
   }
@@ -19,6 +18,5 @@ export class ChildComponent implements OnInit {
 
   ngAfterViewInit() {
     // child is set
-    this.child.start();
   }
 }
