@@ -4,21 +4,23 @@ import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ToDoComponent } from './to-do/to-do.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { Page1Component } from './page1/page1.component';
 import { WelkomComponent } from './welkom/welkom.component';
-
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToDoComponent,
-    WelkomComponent 
+    NavbarComponent,
+    Page1Component,
+    WelkomComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      { path: 'Welkom', component: WelkomComponent },
-      { path: 'to-do', component: ToDoComponent }
+      { path: '', component: WelkomComponent },
+      { path: 'page1', component: Page1Component },
+      { path: 'page2', component: Page1Component },
     ]),
     AppRoutingModule
   ],
