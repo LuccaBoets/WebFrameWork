@@ -9,6 +9,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { NavbComponent } from './navb/navb.component';
+import { ToDoChildComponent } from './to-do-child/to-do-child.component';
+import { ToDoParentComponent } from './to-do-parent/to-do-parent.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { NavbComponent } from './navb/navb.component';
     NavbarComponent,
     ParentComponent,
     ChildComponent,
-    NavbComponent
+    NavbComponent,
+    ToDoChildComponent,
+    ToDoParentComponent
   ],
   imports: [
     BrowserModule,

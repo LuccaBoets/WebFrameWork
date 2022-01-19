@@ -19,9 +19,10 @@ export class WelkomComponent implements OnInit {
    }
 
   ngOnInit(): void {
+ 
   }
 
   option(value: string){
-    this.photo = value
+    this.photo = value    
   }
 }

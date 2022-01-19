@@ -11,8 +11,6 @@ export class ParentComponent implements OnInit {
   @Input("max") max: number = 100
   getal: number = this.generateRandomNumber()
 
-
-
   constructor() {
     this.start()
   }

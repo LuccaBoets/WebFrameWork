@@ -1,0 +1,34 @@
+{
+  "Pokemons": [
+    {
+      "id" : 1,
+      "Name": "Pikachu",
+      "Type": "Electric"
+    },
+    {
+      "id" : 2,
+      "Name": "Raichu",
+      "Type": "Electric"
+    },
+    {
+      "id" : 3,
+      "Name": "Sandshrew",
+      "Type": "Ground"
+    },
+    {
+      "id" : 4,
+      "Name": "Sandslash",
+      "Type": "Ground"
+    },
+    {
+      "id" : 5,
+      "Name": "Nidoran",
+      "Type": "Poison"
+    },
+    {
+      "id" : 6,
+      "Name": "Nidorina",
+      "Type": "Poison"
+    }
+  ]
+}

@@ -12,7 +12,7 @@ import { WelkomComponent } from './welkom/welkom.component';
   declarations: [
     AppComponent,
     ToDoComponent,
-    WelkomComponent 
+    WelkomComponent
   ],
   imports: [
     BrowserModule,
